@@ -1,0 +1,8 @@
+{
+  "env": {
+    "MONGO_USER": "mitreadru1",
+    "MONGO_PASSWORD": "Genius11",
+    "MONGO_DEFAULT_DATABASE": "shop",
+    "STRIPE_KEY": "sk_test_51NkphOLjKMGaNvoNSMORGO7Xv0dQ7mZndyNteeqGvVPJNQZDIoZJnaTl3hcZB7ioD6hLgNJHQwIWIs8aHl7FM63n00clx6LZzQ"
+  }
+}
