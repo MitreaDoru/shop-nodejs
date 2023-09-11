@@ -1,5 +1,6 @@
 const path = require('path')
 const fs = require('fs')
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -13,10 +14,11 @@ const shopRoutes = require('./routes/shop');
 const authRoutes = require('./routes/auth');
 const errorController = require('./controllers/error');
 const helmet = require('helmet')
-const compression = require('compression')
+const compression = require('compression');
 const morgan = require('morgan');
-console.log(process.env.MONGO_USER, process.env.MONGO_PASSWORD, process.env.MONGO_DEFAULT_DATABASE);
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.fqxrlrh.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`
+
+
+const MONGODB_URI = process.env.MONGODB_URI
 const User = require('./models/user')
 
 
